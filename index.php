@@ -11,10 +11,13 @@ include __DIR__ . '/store.php'
 </head>
 <body>
     <h1>HELLO OOP</h1>
-    <?php foreach ($products as $product) { ?>
-        <div>
-            <?php $product->print(); ?>
-        </div>
-    <?php } ?>
+
+    <div>
+        <?php
+         foreach ($products as $product){
+            echo "<p>" . $product->print() . "</p>";
+        } 
+        ?>
+    </div>
 </body>
 </html>
